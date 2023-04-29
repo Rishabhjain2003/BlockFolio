@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  background-color: rgb(18,22, 30);
+  padding-bottom: 20px;
+}
+
+::-webkit-scrollbar{
+  background-color: #8aa3ba;
+  width: 1.5rem;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: rgb(33,39,54);
+  border-radius: 10px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.containers{
+  max-width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	min-height: 100vh;
+  background: rgb(33,39,54);
+  border-radius: 6px;
+  font-family: Atkinson Hyperlegible;
+  font-size: 17px;
+}
+
+.coin-cont{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(1, minmax(400px, 1fr));
+}
+
+.coincard{
+  border-top: 1px solid white;
+  color: rgb(232, 230, 227);
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.name-sym{
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+}
+
+.name-sym small{
+  font-size: 17px;
+  color: #E8E6E3;
+}
+
+.name-sym t{
+  font-size: 12px;
+  color: #8aa3ba;
+}
+
+td{
+  height: 68px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+}
+
+th{
+  height: 50px;
+  width: 150px;
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  font-size: 16px;
+}
+
+tr{
+  display: flex;
+  padding: 0px 15px;
+}
+
+.vol{
+  justify-content: right;
+}
+
+.cryptoheader{
+  height: 100px;
+  max-width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Atkinson Hyperlegible;
+}
+
+.cryptoheader input{
+  font-size: 20px;
+  width: max(40%,200px);
+  height: 2.5rem;
+  background-color: rgb(18,22, 30);
+  border: 2px solid rgb(232, 230, 227);
+  border-radius: 3px;
+  color: white;
+  font-weight: 600;
+  padding: 0px 15px;
+}
+
+.cryptoheader h1{
+  color: white;
+  font-size: 40px;
+}
