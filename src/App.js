@@ -1,8 +1,6 @@
 import  Axios  from 'axios';
 import './App.css';
 import {useEffect, useState} from 'react';
-import Card from 'react-bootstrap/Card';
-import CardGroup from 'react-bootstrap/CardGroup';
 
 function App() {
   const [listofcoins, setlistofcoins] = useState([]);
@@ -46,7 +44,7 @@ function App() {
                 <tr className='coincard'>
                   <td style={{width:200}}>
                     <div style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
-                      <img src={coin.icon} width={30} height={30}></img>
+                      <img src={coin.icon} width={30} height={30} alt='img'></img>
                       <div className='name-sym'>
                         <small>{coin.symbol}</small>
                         <t>{coin.name}</t>
